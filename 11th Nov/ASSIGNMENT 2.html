@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillNest</title>
+
+<style>
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9fbf9;  
+    color: #1a3b2e;
+  }
+
+  header {
+    background: #fff;
+    border-bottom: 2px solid #e5e5e5;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .header-content {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo-icon {
+    background: #00bcd4;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: .3s;
+  }
+
+  nav a:hover {
+    color: #00bcd4;
+  }
+
+  .join-btn {
+    background: #00bcd4;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .join-btn:hover {
+    background: #00acc1;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 188, 212, 0.3);
+  }
+
+  .wrapper {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 0 30px;
+  }
+
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .card {
+    background: #fff;
+    border: 2px solid #e5e5e5;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .4s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-color: #00bcd4;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+
+  .card-hours {
+    color: #00bcd4;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  footer {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2c3e50;
+    font-size: .9rem;
+  }
+
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+    nav {
+      flex-direction: column;
+      gap: 15px;
+    }
+    .courses {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+
+<body>
+<header>
+  <div class="header-content">
+    <div class="logo-section">
+      <div class="logo-icon">S</div>
+      <div class="logo">SkillNest</div>
+    </div>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">COURSES</a>
+      <a href="#">CONTACT</a>
+      <a href="#" class="join-btn">Join Now →</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrapper">
+  <section class="courses">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop" 
+           alt="Intro to Java" class="card-image">
+      <div class="card-content">
+        <div class="card-title">Intro to Java</div>
+        <div class="card-hours">320 Hrs</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop" 
+           alt="UX Design Principles" class="card-image">
+      <div class="card-content">
+        <div class="card-title">UX Design Principles</div>
+        <div class="card-hours">280 Hrs</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&h=300&fit=crop" 
+           alt="Cloud Computing" class="card-image">
+      <div class="card-content">
+        <div class="card-title">Cloud Computing</div>
+        <div class="card-hours">360 Hrs</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&h=300&fit=crop" 
+           alt="Cybersecurity Basics" class="card-image">
+      <div class="card-content">
+        <div class="card-title">Cybersecurity Basics</div>
+        <div class="card-hours">300 Hrs</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 SkillNest – Empowering Skills for the Future
+  </footer>
+</div>
+
+</body>
+</html>

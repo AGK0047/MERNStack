@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <center><h1>Add Employee</h1></center>
+    
+    <div id="box">
+      Name: <input type="text" id="empName"> <br>
+      Age: &nbsp;&nbsp;&nbsp;<input type="number" id="empAge"> <br>
+      Position: <input type="text" id="empPos"> <br><br>
+      
+      <button type="button" onclick="addEmp()">Add Employee</button>
+    </div>
+
+    <center><h2>Employee List</h2></center>
+    
+    <table id="myTable" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Position</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>

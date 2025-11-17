@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>My First Web Page</h2>
+    <p>My first paragraph.</p>
+    <p>
+      Never call document.write after the document has finished loading. It will
+      overwrite the whole document.
+    </p>
+    
+    <span id="math-answer"></span>
+
+    <script>
+      var number1 = 5;
+      var number2 = 6;
+      var total = number1 + number2;
+      
+      document.getElementById("math-answer").innerHTML = total;
+    </script>
+  </body>
+</html>

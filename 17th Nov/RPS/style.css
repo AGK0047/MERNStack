@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+}
+
+#main-box {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    padding-bottom: 20px;
+}
+
+.score-box {
+    display: inline-block;
+    width: 150px;
+    border: 2px solid grey;
+    margin: 10px;
+    padding: 10px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#end-btn {
+    background-color: red;
+    margin-left: 50px;
+}
+
+#status-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}

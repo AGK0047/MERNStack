@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JS Operations: Constants and User Input</title>
+</head>
+<body>
+  <h2>Calculator with Constant Values</h2>
+  <p>Constants: <b>a = 10</b>, <b>b = 5</b></p>
+
+  <button onclick="addFixed()">Add</button>
+  <button onclick="subFixed()">Subtract</button>
+  <button onclick="mulFixed()">Multiply</button>
+  <button onclick="divFixed()">Divide</button>
+
+  <p id="result"></p>
+
+  <hr>
+
+  <h2>Calculator with User Input</h2>
+  <label>Enter value for a: </label>
+  <input type="number" id="userA"><br><br>
+  <label>Enter value for b: </label>
+  <input type="number" id="userB"><br><br>
+
+  <button onclick="doAdd()">Add</button>
+  <button onclick="doSub()">Subtract</button>
+  <button onclick="doMul()">Multiply</button>
+  <button onclick="doDiv()">Divide</button>
+
+  <p id="userResult"></p>
+
+  <script>
+    // --- CONSTANT PART ---
+    function addFixed() {
+      var x = 10;
+      var y = 5;
+      var ans = x + y;
+      document.getElementById("result").innerHTML = "Result of " + x + " + " + y + " = " + ans;
+    }
+
+    function subFixed() {
+      var x = 10;
+      var y = 5;
+      var ans = x - y;
+      document.getElementById("result").innerHTML = "Result of " + x + " - " + y + " = " + ans;
+    }
+
+    function mulFixed() {
+      var x = 10;
+      var y = 5;
+      var ans = x * y;
+      document.getElementById("result").innerHTML = "Result of " + x + " * " + y + " = " + ans;
+    }
+
+    function divFixed() {
+      var x = 10;
+      var y = 5;
+      var ans = x / y;
+      document.getElementById("result").innerHTML = "Result of " + x + " / " + y + " = " + ans;
+    }
+
+  
+    
+    function doAdd() {
+      
+      var val1 = document.getElementById("userA").value;
+      var val2 = document.getElementById("userB").value;
+      
+      
+      var n1 = Number(val1);
+      var n2 = Number(val2);
+      var total = n1 + n2;
+      
+      if(val1 == "" || val2 == "") {
+         document.getElementById("userResult").innerHTML = "⚠️ Please enter valid numbers.";
+      } else {
+         document.getElementById("userResult").innerHTML = "Result of " + n1 + " + " + n2 + " = " + total;
+      }
+    }
+
+    function doSub() {
+      var val1 = document.getElementById("userA").value;
+      var val2 = document.getElementById("userB").value;
+      var total = val1 - val2;
+      
+      if(val1 == "" || val2 == "") {
+         document.getElementById("userResult").innerHTML = "⚠️ Please enter valid numbers.";
+      } else {
+         document.getElementById("userResult").innerHTML = "Result of " + val1 + " - " + val2 + " = " + total;
+      }
+    }
+
+    function doMul() {
+      var val1 = document.getElementById("userA").value;
+      var val2 = document.getElementById("userB").value;
+      var total = val1 * val2;
+      
+      if(val1 == "" || val2 == "") {
+         document.getElementById("userResult").innerHTML = "⚠️ Please enter valid numbers.";
+      } else {
+         document.getElementById("userResult").innerHTML = "Result of " + val1 + " * " + val2 + " = " + total;
+      }
+    }
+
+    function doDiv() {
+      var val1 = document.getElementById("userA").value;
+      var val2 = document.getElementById("userB").value;
+      
+      if(val1 == "" || val2 == "") {
+         document.getElementById("userResult").innerHTML = "⚠️ Please enter valid numbers.";
+      } else {
+         
+         if (val2 == 0) {
+             var total = "∞ (division by zero)";
+         } else {
+             var total = val1 / val2;
+         }
+         document.getElementById("userResult").innerHTML = "Result of " + val1 + " / " + val2 + " = " + total;
+      }
+    }
+  </script>
+</body>
+</html>

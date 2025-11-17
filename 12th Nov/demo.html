@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic JS Demo</title>
+  </head>
+  <body>
+    <h1>JavaScript Operators, Conditions, and Loops</h1>
+
+    <button onclick="doMath()">Show Operators</button>
+    <button onclick="checkNum()">Show If-Else</button>
+    <button onclick="doLoop()">Show Loop</button>
+
+    <p id="result"></p>
+
+    <script>
+      function doMath() {
+        var x = 8;
+        var y = 4;
+        
+        // printing the first line
+        document.getElementById("result").innerHTML = "a = " + x + ", b = " + y + "<br>";
+        
+        // adding the other lines one by one
+        var add = x + y;
+        document.getElementById("result").innerHTML += "Addition: " + add + "<br>";
+        
+        var sub = x - y;
+        document.getElementById("result").innerHTML += "Subtraction: " + sub + "<br>";
+        
+        var mul = x * y;
+        document.getElementById("result").innerHTML += "Multiplication: " + mul + "<br>";
+        
+        var div = x / y;
+        document.getElementById("result").innerHTML += "Division: " + div + "<br>";
+        
+        var mod = x % y;
+        document.getElementById("result").innerHTML += "Modulus: " + mod;
+      }
+
+      function checkNum() {
+        var input = prompt("Enter a number:");
+        var txt = "";
+
+        // checking if it is bigger than 0
+        if (input > 0) {
+            txt = "The number is positive.";
+        }
+        
+        // checking if it is smaller than 0
+        if (input < 0) {
+            txt = "The number is negative.";
+        }
+        
+        // checking if it is 0
+        if (input == 0) {
+            txt = "The number is zero.";
+        }
+        
+        document.getElementById("result").innerHTML = txt;
+      }
+
+      function doLoop() {
+        var i = 1;
+        var output = "";
+        
+        // using a while loop instead of a for loop
+        while (i < 6) {
+          output = output + "Number: " + i + "<br>";
+          i = i + 1; 
+        }
+        
+        document.getElementById("result").innerHTML = output;
+      }
+    </script>
+  </body>
+</html>

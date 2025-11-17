@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Box Model</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <center>
+        <h1>CSS Box Model Demonstration</h1>
+    </center>
+
+    <div id="container">
+      <div id="the-box">
+        <div id="text-inside">Content</div>
+      </div>
+    </div>
+
+    <center>
+    <div class="sliders">
+      
+      Margin Top: <input type="range" id="m-top" min="0" max="300" value="20" oninput="changeMarginTop()">
+      <span id="val-m-top">20px</span>
+      <br><br>
+
+      Margin Right: <input type="range" id="m-right" min="0" max="300" value="20" oninput="changeMarginRight()">
+      <span id="val-m-right">20px</span>
+      <br><br>
+
+      Margin Bottom: <input type="range" id="m-bottom" min="0" max="300" value="20" oninput="changeMarginBottom()">
+      <span id="val-m-bottom">20px</span>
+      <br><br>
+
+      Margin Left: <input type="range" id="m-left" min="0" max="300" value="20" oninput="changeMarginLeft()">
+      <span id="val-m-left">20px</span>
+      <br><br>
+
+      <hr>
+
+      Border Width: <input type="range" id="brd" min="0" max="50" value="10" oninput="changeBorder()">
+      <span id="val-brd">10px</span>
+      <br><br>
+
+      Padding: <input type="range" id="pad" min="0" max="100" value="30" oninput="changePadding()">
+      <span id="val-pad">30px</span>
+
+    </div>
+    </center>
+    <br>
+    
+    <div style="background-color: #eee; padding: 10px;">
+      <h3>What is what?</h3>
+      <div class="legend-box" style="border: 2px dashed grey;"></div> Margin (Invisible space outside)<br>
+      <div class="legend-box" style="background-color: orange;"></div> Border<br>
+      <div class="legend-box" style="background-color: yellow;"></div> Padding<br>
+      <div class="legend-box" style="background-color: brown;"></div> Content
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

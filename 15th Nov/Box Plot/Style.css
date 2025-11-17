@@ -1,0 +1,56 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+#container {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#the-box {
+    background-color: yellow;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: 10px solid orange;
+    padding: 30px;
+    width: 200px;
+    height: 200px;
+    
+    display: inline-block;
+}
+
+#text-inside {
+    background-color: brown;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-top: 40%;
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+.sliders {
+    background-color: #ddd;
+    padding: 20px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.legend-box {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid black;
+}

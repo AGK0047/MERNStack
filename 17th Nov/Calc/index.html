@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <br><br>
+    <center>
+      <div id="mainbox">
+        <input type="text" id="screen" readonly>
+        <br><br>
+        <table id="calc-table">
+          <tr>
+            <td><button onclick="press1()">1</button></td>
+            <td><button onclick="press2()">2</button></td>
+            <td><button onclick="press3()">3</button></td>
+            <td><button onclick="pressPlus()" class="op">+</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="press4()">4</button></td>
+            <td><button onclick="press5()">5</button></td>
+            <td><button onclick="press6()">6</button></td>
+            <td><button onclick="pressMinus()" class="op">-</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="press7()">7</button></td>
+            <td><button onclick="press8()">8</button></td>
+            <td><button onclick="press9()">9</button></td>
+            <td><button onclick="pressMul()" class="op">*</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="pressDot()">.</button></td>
+            <td><button onclick="press0()">0</button></td>
+            <td><button onclick="doEqual()" id="eq">=</button></td>
+            <td><button onclick="pressDiv()" class="op">/</button></td>
+          </tr>
+        </table>
+      </div>
+    </center>
+    <script src="script.js"></script>
+  </body>
+</html>

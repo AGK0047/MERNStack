@@ -1,0 +1,33 @@
+.wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.box {
+    background-color: lightblue;
+    color: #333;
+    width: 30%;
+    height: 100px;
+    float: left;
+    margin: 1.5%;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 25px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.big-box {
+    background-color: rgb(255, 105, 97);
+    color: white;
+    width: 96%;
+    float: left;
+    margin: 1.5%;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 5px;
+}

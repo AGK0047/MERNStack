@@ -1,0 +1,68 @@
+[
+  {
+    "my_id": "1",
+    "ProductName": "xPhone",
+    "cost": "799",
+    "date_added": "2011-05-14",
+    "RAM_memory": "4 GB",
+    "ScreenSize": "6.5 inches",
+    "CpuSpeed": "2.66",
+    "Colors": "white, black",
+    "Storage_Options": "64, 128, 256"
+  },
+  {
+    "my_id": "2",
+    "ProductName": "xTablet",
+    "cost": "899",
+    "date_added": "2011-09-01",
+    "RAM_memory": "16 GB",
+    "ScreenSize": "9.5 inches",
+    "CpuSpeed": "3.66",
+    "Colors": "white, black, purple",
+    "Storage_Options": "128, 256, 512"
+  },
+  {
+    "my_id": "3",
+    "ProductName": "SmartTablet",
+    "cost": "899",
+    "date_added": "2015-01-14",
+    "RAM_memory": "12 GB",
+    "ScreenSize": "9.7 inches",
+    "CpuSpeed": "3.66",
+    "Colors": "blue",
+    "Storage_Options": "16, 64, 128"
+  },
+  {
+    "my_id": "4",
+    "ProductName": "SmartPad",
+    "cost": "599 - 799",
+    "date_added": "2020-05-14",
+    "RAM_memory": "8 GB",
+    "ScreenSize": "9.7 inches",
+    "CpuSpeed": "1.66",
+    "Colors": "white, orange, gold, gray",
+    "Storage_Options": "128, 256, 1024"
+  },
+  {
+    "my_id": "5",
+    "ProductName": "SmartPhone",
+    "cost": "599 or 699",
+    "date_added": "2022-09-14",
+    "RAM_memory": "4 GB",
+    "ScreenSize": "9.7 inches",
+    "CpuSpeed": "1.66",
+    "Colors": "white, orange, gold, gray",
+    "Storage_Options": "128, 256"
+  },
+  {
+    "my_id": "6",
+    "ProductName": "xWidget",
+    "cost": "N/A",
+    "date_added": "Unknown",
+    "RAM_memory": "64 GB",
+    "ScreenSize": "9.7 inches",
+    "CpuSpeed": "3.66",
+    "Colors": "black",
+    "Storage_Options": "1024"
+  }
+]
